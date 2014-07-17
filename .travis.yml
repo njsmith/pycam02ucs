@@ -1,10 +1,10 @@
 language: python
 python:
   - 2.7
-  - 3.3
-  - 3.4
+  # - 3.3
+  # - 3.4
 before_install:
-  - pip install coverage numpy
+  - pip install coverage nose-cov numpy
   # don't bother compiling Cython itself, we're only going to use it once
   - pip install --install-option="--no-cython-compile" Cython
 install:

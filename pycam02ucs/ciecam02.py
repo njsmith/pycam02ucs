@@ -138,7 +138,6 @@ class ViewingConditions(object):
             self.L_A,
             surround_string)
 
-    # XYZ must have shape (3,) or (3, n)
     def XYZ_to_CIECAM02(self, XYZ, on_negative_A="raise"):
         """Computes CIECAM02 appearance correlates for the given tristimulus
         value(s) XYZ.
